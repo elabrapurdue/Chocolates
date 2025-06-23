@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chocolate Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdf5e6;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: #fffdd0; /* cream */
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 180px;
+      border-radius: 8px;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card .info {
+      display: none;
+      font-size: 0.9em;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Pick Your Chocolate</h1>
+
+  <div id="chocContainer" class="cards"></div>
+
+  <button id="freeSampleBtn">🎁 Get a Random Free Sample</button>
+  <button id="toggleInfoBtn">ℹ️ Toggle Calorie & Ingredients Info</button>
+
+  <script src="jquery-3.7.1.js"></script>
+  <script src="script2.js"></script>
+</body>
+</html>
